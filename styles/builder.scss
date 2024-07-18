@@ -1,0 +1,48 @@
+@mixin icon-image($size) {
+    min-height: $size;
+    min-width: $size;
+    height: $size;
+    width: $size;
+    vertical-align: middle;
+}
+@mixin flex($row-way, $column-way, $iorc) {
+		display: flex;
+		justify-content: $row-way;
+
+		@if $iorc =='items' {
+			align-items: $column-way;
+		}
+
+		@else if $iorc =='content' {
+			align-content: $column-way;
+		}
+	}
+@mixin fontC($size){
+		font-size: $size;
+		text-align: center;
+		@content
+	}	
+@mixin fontH($size,$height){
+		font-size: $size;
+		font-weight: 700;
+		line-height: $height;
+		@content
+	}
+	
+@mixin responseTo($breakname) {
+	@if $breakname == 'phone'{
+		@media (min-width: 320px) and (max-width: 480px){
+			@content
+		}
+	}
+	@else if $breakname == 'pad'{
+		@media (min-width: 481px) and (max-width: 1023px){
+			@content
+		}
+	}
+	@else if $breakname == 'notebook'{
+		@media (min-width: 1024px) and (max-width: 2256px){
+			@content
+		}
+	}
+}

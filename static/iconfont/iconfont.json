@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "383628",
+      "name": "小鸟",
+      "font_class": "xiaoniao",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1001133",
+      "name": "裹裹logo",
+      "font_class": "logo",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3456457",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e70f",
+      "unicode_decimal": 59151
+    },
+    {
+      "icon_id": "7138342",
+      "name": "md-egg",
+      "font_class": "md-egg",
+      "unicode": "e81b",
+      "unicode_decimal": 59419
+    },
+    {
+      "icon_id": "7978112",
+      "name": "异常",
+      "font_class": "yichang",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "15177207",
+      "name": "nestegg",
+      "font_class": "nestegg",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "15511014",
+      "name": "267",
+      "font_class": "267",
+      "unicode": "ebd6",
+      "unicode_decimal": 60374
+    },
+    {
+      "icon_id": "18211598",
+      "name": "前往",
+      "font_class": "qianwang",
+      "unicode": "e7cf",
+      "unicode_decimal": 59343
+    }
+  ]
+}

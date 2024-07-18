@@ -1,0 +1,258 @@
+{
+    "name" : "易养鸽",
+    "appid" : "__UNI__154E97B",
+    "description" : "",
+    "versionName" : "2.6.2",
+    "versionCode" : 262,
+    "transformPx" : false,
+    "networkTimeout" : {
+        "uploadFile" : 1200000 // 单位：ms。 如果不配置，上传大文件可能会超时
+    },
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "autoclose" : false,
+            "waiting" : false,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "VideoPlayer" : {},
+            "Bluetooth" : {},
+            "Push" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_SURFACE_FLINGER\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCOUNT_MANAGER\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>",
+                    "<uses-permission android:name=\"android.permission.BLUETOOTH_PRIVILEGED\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.NFC\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_FRAME_BUFFER\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "minSdkVersion" : "",
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "capabilities" : {
+                    "entitlements" : {
+                        "com.apple.developer.associated-domains" : [ "applinks:likeshop.yixiangonline.com" ]
+                    }
+                },
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "您可以设置头像、保存图片到相册，还可以上传图片",
+                    "NSPhotoLibraryAddUsageDescription" : "您可以设置头像、保存图片到相册，还可以上传图片",
+                    "NSCameraUsageDescription" : "您可以拍照设置头像、拍照上传图片"
+                },
+                "dSYMs" : false
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "",
+                        "appsecret" : "",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "payment" : {
+                    "weixin" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appid" : "",
+                        "UniversalLinks" : ""
+                    },
+                    "alipay" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "ad" : {},
+                "push" : {
+                    "unipush" : {
+                        "version" : "2",
+                        "offline" : false
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "E:/实验班/易养鸽/UI/图标/72×72.png",
+                    "xhdpi" : "E:/实验班/易养鸽/UI/图标/96×96.png",
+                    "xxhdpi" : "E:/实验班/易养鸽/UI/图标/144×144.png",
+                    "xxxhdpi" : "E:/实验班/易养鸽/UI/图标/192×192.png"
+                },
+                "ios" : {
+                    "appstore" : "",
+                    "ipad" : {
+                        "app" : "",
+                        "app@2x" : "",
+                        "notification" : "",
+                        "notification@2x" : "",
+                        "proapp@2x" : "",
+                        "settings" : "",
+                        "settings@2x" : "",
+                        "spotlight" : "",
+                        "spotlight@2x" : ""
+                    },
+                    "iphone" : {
+                        "app@2x" : "",
+                        "app@3x" : "",
+                        "notification@2x" : "",
+                        "notification@3x" : "",
+                        "settings@2x" : "",
+                        "settings@3x" : "",
+                        "spotlight@2x" : "",
+                        "spotlight@3x" : ""
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "android" : {
+                    "hdpi" : "E:/实验班/易养鸽/UI/图标/启动图标/480×762.png",
+                    "xhdpi" : "E:/实验班/易养鸽/UI/图标/启动图标/720×1242.png",
+                    "xxhdpi" : "E:/实验班/易养鸽/UI/图标/启动图标/1080.png"
+                }
+            }
+        },
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "nvueLaunchMode" : "",
+        "nativePlugins" : {
+            "dodo-uniplugin-usbSerialPort" : {
+                "__plugin_info__" : {
+                    "name" : "dodo-uniplugin-usbSerialPort 串口通信 ",
+                    "description" : "基于原生Android开发的 uni-app 插件，实现CH34X 系列芯片串口通信；实时监听接收串口数据；在USB接口或OTG接口插入CH34X芯片设备，会自动打开;",
+                    "platforms" : "Android",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=14890",
+                    "android_package_name" : "uni.UNI154E97B",
+                    "ios_bundle_id" : "",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "14890",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true
+        },
+        "usingComponents" : true,
+        "optimization" : {
+            "subPackages" : true
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "h5" : {
+        "title" : "加载中",
+        "domain" : "http://likeshopb2cos.yixiangonline.com/mobile/",
+        "router" : {
+            "base" : "/mobile/",
+            "mode" : "history"
+        },
+        "publicPath" : "/mobile/",
+        "devServer" : {
+            "https" : false,
+            "port" : 8080,
+            "proxy" : {
+                "/api" : {
+                    "target" : "http://likeshop.yixiangonline.com",
+                    "changeOrigin" : true,
+                    "secure" : false,
+                    "pathRewrite" : {
+                        "^/api" : "/api/"
+                    }
+                }
+            }
+        }
+    },
+    "locale" : "zh-Hans",
+    "fallbackLocale" : "zh-Hans"
+}
+// "icons" : {
+//     "android" : {
+//         "hdpi" : "E:/图标/72×72.png",
+//         "xhdpi" : "E:/图标/96×96.png",
+//         "xxhdpi" : "E:/图标/144×144.png",
+//         "xxxhdpi" : "E:/图标/192×192.png"
+//     },
+//     "ios" : {
+//         "appstore" : "",
+//         "ipad" : {
+//             "app" : "",
+//             "app@2x" : "",
+//             "notification" : "",
+//             "notification@2x" : "",
+//             "proapp@2x" : "",
+//             "settings" : "",
+//             "settings@2x" : "",
+//             "spotlight" : "",
+//             "spotlight@2x" : ""
+//         },
+//         "iphone" : {
+//             "app@2x" : "",
+//             "app@3x" : "",
+//             "notification@2x" : "",
+//             "notification@3x" : "",
+//             "settings@2x" : "",
+//             "settings@3x" : "",
+//             "spotlight@2x" : "",
+//             "spotlight@3x" : ""
+//         }
+//     }
+// },
+// "splashscreen" : {
+//     "androidStyle" : "default",
+//     "android" : {
+//         "hdpi" : "E:/图标/启动页.png"
+//     }
+// }
+
